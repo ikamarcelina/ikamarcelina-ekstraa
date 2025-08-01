@@ -13,4 +13,9 @@ class Student extends Model
  'dob',
  'address'
 ];
+public function extracurriculars()
+{
+    return $this->belongsToMany(Extracurricular::class);
+}
+
 }

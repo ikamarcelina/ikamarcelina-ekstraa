@@ -13,8 +13,9 @@ class Eskul extends Model
 
     protected $fillable = ['nama'];
 
-    public function siswa()
-    {
-        return $this->belongsToMany(Siswa::class, 'pendaftaran');
-    }
+   public function students()
+{
+    return $this->belongsToMany(Student::class);
+}
+
 }
